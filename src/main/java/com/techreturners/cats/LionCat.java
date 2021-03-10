@@ -2,21 +2,21 @@ package com.techreturners.cats;
 
 public class LionCat implements Cat{
   private Boolean asleep = false;
-  //private
+
   public String getSetting(){
-    return "domestic";
+    return "wild";
   }
-  public Object getAverageHeight(){
+  public int getAverageHeight(){
     return 1100;
   }
   public String eat(){
     return "Roar!!!!";
   }
   public Boolean isAsleep(){
-    return true;
+    return asleep;
   }
   public void run(){
-    System.out.println("Cat should be awake now");
+    System.out.println("Lion should run now");
   }
   public void goToSleep(){
     asleep = true;
