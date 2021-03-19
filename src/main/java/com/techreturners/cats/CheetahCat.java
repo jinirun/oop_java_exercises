@@ -1,16 +1,16 @@
 package com.techreturners.cats;
 
-public class CheetahCat implements Cat{
+public class CheetahCat extends GeneralCat{
+
+  public CheetahCat() {super ("Zzzzzzz",1200,"wild");}
   private Boolean asleep = false;
 
   public String getSetting(){
-    return "wild";
+    return setting;
   }
-  public int getAverageHeight(){
-    return 1200;
-  }
+  public int getAverageHeight(){ return height; }
   public String eat(){
-    return "Zzzzzzz";
+    return catSound;
   }
   public Boolean isAsleep(){
     return asleep;

@@ -1,16 +1,15 @@
 package com.techreturners.cats;
 
-public class DomesticCat implements Cat{
+public class DomesticCat extends GeneralCat{
   private Boolean asleep = false;
+  public DomesticCat() { super ("Purrrrrrr",23, "domestic" );}
 
   public String getSetting(){
-    return "domestic";
+    return setting;
   }
-  public int getAverageHeight(){
-    return 23;
-  }
+  public int getAverageHeight(){ return height;  }
   public String eat(){
-    return "Purrrrrrr";
+    return catSound;
   }
   public Boolean isAsleep(){
     return asleep;

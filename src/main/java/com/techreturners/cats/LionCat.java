@@ -1,16 +1,17 @@
 package com.techreturners.cats;
 
-public class LionCat implements Cat{
+public class LionCat extends GeneralCat{
   private Boolean asleep = false;
+  public LionCat(){super ("Roar!!!!", 1100, "wild");}
 
   public String getSetting(){
-    return "wild";
+    return setting;
   }
   public int getAverageHeight(){
-    return 1100;
+    return height;
   }
   public String eat(){
-    return "Roar!!!!";
+    return catSound;
   }
   public Boolean isAsleep(){
     return asleep;
