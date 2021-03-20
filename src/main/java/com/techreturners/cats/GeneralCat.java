@@ -12,23 +12,10 @@ public abstract class GeneralCat implements Cat{
     this.catSound = catSound;
   }
 
-  public String getSetting(String setting){
-    return this.setting;
-  }
-  public int getAverageHeight(int height){ return this.height; }
-  public String eat(String catSound){
-    return this.catSound;
-  }
-  public Boolean isAsleep(){
-    return this.asleep;
-  }
-  public void run(){
-    System.out.println("Lion should run now");
-  }
-  public void goToSleep(){
-    asleep = true;
-  }
-  public void wakeUp(){
-    asleep = false;
-  }
+  public String getSetting(){ return this.setting; }
+  public int getAverageHeight(){ return this.height; }
+  public String eat(){ return this.catSound; }
+  public Boolean isAsleep(){ return this.asleep; }
+  public void goToSleep(){ asleep = true; }
+  public void wakeUp(){ asleep = false; }
 }
